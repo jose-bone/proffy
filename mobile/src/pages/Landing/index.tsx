@@ -12,7 +12,7 @@ export function Landing() {
   const { navigate } = useNavigation();
 
   function handleNavigateToGiveClassesPage() {
-    navigate("GiveClasses");
+    navigate({ key: "GiveClasses" });
   }
 
   return (
