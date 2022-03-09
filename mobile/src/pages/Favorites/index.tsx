@@ -4,5 +4,9 @@ import { View } from "react-native";
 import { styles } from "./styles";
 
 export function Favorites() {
-  return <View style={styles.container}></View>;
+  return (
+    <View style={styles.container}>
+      <PageHeader title="Meus proffys favoritos" />
+    </View>
+  );
 }
