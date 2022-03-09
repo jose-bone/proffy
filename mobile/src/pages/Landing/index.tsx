@@ -1,5 +1,7 @@
 import React from "react";
-import { Image, Text, View, TouchableOpacity } from "react-native";
+import { Image, Text, View } from "react-native";
+import { useNavigation } from "@react-navigation/native";
+import { RectButton } from "react-native-gesture-handler";
 
 import { styles } from "./styles";
 
@@ -12,11 +14,11 @@ export function Landing() {
   const { navigate } = useNavigation();
 
   function handleNavigateToGiveClassesPage() {
-    navigate({ key: "GiveClasses" });
+    navigate("GiveClasses");
   }
 
   function handleNavigateToStudyPages() {
-    navigate({ key: "Study" });
+    navigate("Study");
   }
 
   return (

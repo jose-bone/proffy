@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import { Landing } from "../pages/Landing";
 import { GiveClasses } from "../pages/GiveClasses";
+import { StudyTabs } from "./StudyTabs";
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
