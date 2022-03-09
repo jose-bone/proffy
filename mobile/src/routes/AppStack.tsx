@@ -6,16 +6,16 @@ import { Landing } from "../pages/Landing";
 import { GiveClasses } from "../pages/GiveClasses";
 import { StudyTabs } from "./StudyTabs";
 
-const { Navigator, Screen } = createNativeStackNavigator();
+const Stack = createNativeStackNavigator();
 
 export function AppStack() {
   return (
     <NavigationContainer>
-      <Navigator screenOptions={{ headerShown: false }}>
-        <Screen name="Landing" component={Landing} />
-        <Screen name="GiveClasses" component={GiveClasses} />
-        <Screen name="Study" component={StudyTabs} />
-      </Navigator>
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="Landing" component={Landing} />
+        <Stack.Screen name="GiveClasses" component={GiveClasses} />
+        <Stack.Screen name="Study" component={StudyTabs} />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 }

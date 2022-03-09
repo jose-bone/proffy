@@ -5,11 +5,11 @@ import { Ionicons } from "@expo/vector-icons";
 import { Favorites } from "../pages/Favorites";
 import { TeacherList } from "../pages/TeacherList";
 
-const { Navigator, Screen } = createBottomTabNavigator();
+const Stack = createBottomTabNavigator();
 
 export function StudyTabs() {
   return (
-    <Navigator
+    <Stack.Navigator
       screenOptions={{
         tabBarStyle: {
           elevation: 0,
@@ -37,7 +37,7 @@ export function StudyTabs() {
         tabBarActiveTintColor: "#32264D",
       }}
     >
-      <Screen
+      <Stack.Screen
         name="TeacherList"
         component={TeacherList}
         options={{
@@ -53,7 +53,7 @@ export function StudyTabs() {
           },
         }}
       />
-      <Screen
+      <Stack.Screen
         name="Favorites"
         component={Favorites}
         options={{
@@ -69,6 +69,6 @@ export function StudyTabs() {
           },
         }}
       />
-    </Navigator>
+    </Stack.Navigator>
   );
 }
