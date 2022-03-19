@@ -21,6 +21,14 @@
   <img alt="Proffy" src=".github/web-landing.png" width="100%">
 </p>
 
+### Mobile Screenshot
+<div style="display: flex; flex-direction: 'row';">
+   <img src="./.github/mobile-splash.png" width="180">
+   <img src="./.github/mobile-onboarding.png" width="180">
+   <img src="./.github/mobile-home.png" width="180">
+   <img src="./.github/mobile-favoritos.png" width="180">
+</div>
+
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
