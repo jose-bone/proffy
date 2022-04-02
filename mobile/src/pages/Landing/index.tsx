@@ -10,6 +10,12 @@ import studyIcon from "../../assets/images/icons/study.png";
 import giveClassesIcon from "../../assets/images/icons/give-classes.png";
 import heartIcon from "../../assets/images/icons/heart.png";
 
+import { styles } from "./styles";
+
+type Nav = {
+  navigate: (value: string) => void;
+};
+
 export function Landing() {
   const { navigate } = useNavigation<Nav>();
   const [totalConnections, setTotalConnections] = useState(0);

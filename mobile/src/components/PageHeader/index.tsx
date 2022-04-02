@@ -13,12 +13,16 @@ interface PageHeaderProps {
   headerRight?: ReactNode;
 }
 
+type Nav = {
+  navigate: (value: string) => void;
+};
+
 export const PageHeader: React.FC<PageHeaderProps> = ({
   title,
   children,
   headerRight,
 }) => {
-  const { navigate } = useNavigation();
+  const { navigate } = useNavigation<Nav>();
 
   function handleGoBack() {
     navigate("Landing");
