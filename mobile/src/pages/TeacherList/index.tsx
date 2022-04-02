@@ -6,6 +6,12 @@ import { PageHeader } from "../../components/PageHeader";
 import { styles } from "./styles";
 
 export function TeacherList() {
+  const [isFiltersVisible, setIsFiltersVisible] = useState(false);
+
+  function handleToggleFiltersVisible() {
+    setIsFiltersVisible(!isFiltersVisible);
+  }
+
   return (
     <View style={styles.container}>
       <PageHeader title="Proffys disponíveis" />
