@@ -29,6 +29,10 @@ export const TeacherItem: React.FC<TeacherItemProps> = ({
   const [isFavorited, setIsFavorited] = useState(favorited);
 
   function handleLinkToWhatsApp() {
+    api.post("connections", {
+      user_id: teacher.id,
+    });
+
     Linking.openURL(`whatsapp://send?phone=${teacher.whatsapp}`);
   }
 

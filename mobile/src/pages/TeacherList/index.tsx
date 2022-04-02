@@ -29,6 +29,10 @@ export function TeacherList() {
     });
   }
 
+  useFocusEffect(() => {
+    loadFavorites();
+  });
+
   function handleToggleFiltersVisible() {
     setIsFiltersVisible(!isFiltersVisible);
   }
