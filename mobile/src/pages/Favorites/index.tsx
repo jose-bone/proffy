@@ -1,7 +1,10 @@
-import React from "react";
-import { View } from "react-native";
+import React, { useState } from "react";
+import { ScrollView, View } from "react-native";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useFocusEffect } from "@react-navigation/native";
 
 import { PageHeader } from "../../components/PageHeader";
+import { Teacher, TeacherItem } from "../../components/TeacherItem";
 
 import { styles } from "./styles";
 

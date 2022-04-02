@@ -1,9 +1,16 @@
-import React from "react";
-import { View } from "react-native";
+import React, { useState } from "react";
+import { ScrollView, Text, TextInput, View } from "react-native";
+import { BorderlessButton, RectButton } from "react-native-gesture-handler";
+import { Feather } from "@expo/vector-icons";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 import { PageHeader } from "../../components/PageHeader";
+import { Teacher, TeacherItem } from "../../components/TeacherItem";
+
+import { api } from "../../services/api";
 
 import { styles } from "./styles";
+import { useFocusEffect } from "@react-navigation/native";
 
 export function TeacherList() {
   const [teachers, setTeachers] = useState([]);

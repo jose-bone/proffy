@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { Image, Text, View } from "react-native";
 import { BorderlessButton } from "react-native-gesture-handler";

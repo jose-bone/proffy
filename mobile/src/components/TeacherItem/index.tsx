@@ -1,12 +1,14 @@
-import React from "react";
-import { Image, Text, View } from "react-native";
+import React, { useState } from "react";
+import { Image, Text, View, Linking } from "react-native";
 import { RectButton } from "react-native-gesture-handler";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 import heartOutlineIcon from "../../assets/images/icons/heart-outline.png";
 import unfavoriteIcon from "../../assets/images/icons/unfavorite.png";
 import whatsAppIcon from "../../assets/images/icons/whatsapp.png";
 
 import { styles } from "./styles";
+import { api } from "../../services/api";
 
 export interface Teacher {
   id: number;
