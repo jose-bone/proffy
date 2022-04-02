@@ -21,7 +21,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
   const { navigate } = useNavigation();
 
   function handleGoBack() {
-    navigate({ key: "Landing" });
+    navigate("Landing");
   }
 
   return (
